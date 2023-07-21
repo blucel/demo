@@ -1,8 +1,8 @@
 /*
  * @Author: 李佐宁 lizuoning@yuan-info.com
  * @Date: 2022-07-11 09:26:03
- * @LastEditors: 李佐宁 lizuoning@yuan-info.com
- * @LastEditTime: 2023-07-10 09:43:52
+ * @LastEditors: 曹文丽 caowenli@yuan-info.com
+ * @LastEditTime: 2023-07-21 14:03:01
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
@@ -60,7 +60,7 @@ export default defineConfig({
     proxy: {
       // 集成日志
       "/api": {
-        target: "http://192.168.15.50:9096/",
+        target: "http://192.168.15.120:9090/",
         changeOrigin: true,
         ws: false,
         secure: false,

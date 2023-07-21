@@ -3,7 +3,7 @@
  * @Author: xuch
  * @FilePath: /component-library/Users/changjun/yuan/safe-product-authority-browser/src/components.ts
  * @Date: 2022-07-22 17:08:53
- * @LastEditTime: 2023-07-19 15:02:24
+ * @LastEditTime: 2023-07-21 13:45:29
  */
 import {
   YaTable,
@@ -26,7 +26,8 @@ import {
   YaTreeNode,
   CustomTooltip,
   YaTabs,
-  YaList
+  YaList,
+  YaEditForm
 } from "yuan-pluss";
 // component-library/packages/components
 import "yuan-pluss/theme-chalk/css/index.css";
@@ -64,6 +65,7 @@ export const setupComponent = (app: any) => {
   app.use(CustomTooltip)
   app.use(YaTabs);
   app.use(YaList);
+  app.use(YaEditForm)
   
   // 通用告警模块
   app.use(YaAlarm)
